@@ -1,4 +1,4 @@
-const apiUrl = "http://api.adviceslip.com/advice";
+const apiUrl = "https://api.adviceslip.com/advice";
 const advice = document.getElementById("advice");
 const id = document.getElementById("id");
 function getAdvice(url) {
