@@ -26,7 +26,6 @@ body {
 main {
   display: grid;
   place-items: center;
-  gap: 25px;
   position: absolute;
   width: 100%;
   max-width: 450px;
@@ -34,20 +33,24 @@ main {
   top: 50%;
   transform: translateY(-50%);
   background-color: var(--color-neutral-dark-grayish-blue);
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 11px;
+  padding: 40px 50px 10px 50px;
 }
 #id {
   color: var(--color-primary-neon-green);
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-bottom: 15px;
 }
 #advice {
   color: var(--color-primary-light-cyan);
   font-weight: 800;
+  font-size: var(--font-size-quote);
+}
+p {
+  margin-bottom: 25px;
 }
 
-#divider {
-  width: 350px;
-}
 button {
   background-color: var(--color-primary-neon-green);
   position: relative;
@@ -55,7 +58,7 @@ button {
   place-items: center;
   width: 50px;
   height: 50px;
-  top: 5.7vh;
+  top: 70%;
   border: none;
   border-radius: 50px;
   transition: all 0.05s ease-in-out;
@@ -64,4 +67,18 @@ button:hover {
   cursor: pointer;
   box-shadow: 0px 0px 25px var(--color-primary-neon-green);
   transition: all 0.05s ease-in-out;
+}
+@media (max-width: 768px) {
+  main {
+    max-width: 350px;
+    padding-left: 30px;
+    padding-right: 30px;
+    top: 43%;
+  }
+  main * {
+    max-width: 100%;
+  }
+   #divider {
+    width: 100%;
+  }
 }

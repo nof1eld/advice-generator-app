@@ -6,7 +6,7 @@ function getAdvice(url) {
     .then((response) => response.json())
     .then((data) => {
       advice.textContent = data.slip.advice;
-      id.textContent = `Advice #${data.slip.id}`;
+      id.textContent = `ADVICE #${data.slip.id}`;
     });
 }
 getAdvice(apiUrl);
